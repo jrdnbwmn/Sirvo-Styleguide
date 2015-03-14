@@ -1,0 +1,33 @@
+// Normalization
+// -----------------------------------------------------------------------------
+ul,
+ol {
+    margin-bottom: $body-text-bottom-margin;
+
+    ul,
+    ol {
+        margin-bottom: 0; // Take off bottom margin from nested lists.
+    }
+}
+
+// Define styling for terms.
+dt { font-weight: bold; }
+
+// Undo browser default.
+dd { margin-left: 0; }
+
+
+// Base list styles
+// -----------------------------------------------------------------------------
+// Indented list
+.reading-list { padding-left: $baseline*6; }
+
+// Remove bullets
+.no-bullets { list-style: none; }
+
+// Inline list – usually used with `.no-bullets`
+.inline-list {
+    li {
+        display: inline-block;
+    }
+}

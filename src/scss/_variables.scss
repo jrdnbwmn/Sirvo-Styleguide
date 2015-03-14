@@ -1,0 +1,131 @@
+// Global
+// -----------------------------------------------------------------------------
+// Baseline
+$baseline: .4rem;
+
+// Breakpoints
+// Mobile Safari has problems with rems being used in media queries
+$small-breakpoint: 40em;
+$medium-breakpoint: 50em;
+$large-breakpoint: 60em;
+
+// Max container width
+$max-container-width: 45em;
+
+
+// Typography
+// -----------------------------------------------------------------------------
+// Font families
+$sans-serif: "Avenir Next", Avenir, Trebuchet, Verdana, sans-serif;
+$serif: Georgia, Times, serif;
+$monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$base-font-family: $sans-serif;
+$heading-font-family: $sans-serif;
+$reading-font-family: $serif;
+$ui-font-family: $sans-serif;
+$code-font-family: $monospace;
+
+// Type scale
+// Good tool: http://type-scale.com/
+$h1: 2.369rem;
+$h2: 1.777rem;
+$h3: 1.333rem;
+$h4: 1rem;
+$h5: .75rem;
+$h6: .75rem;
+
+// Finer control over type scale after certain breakpoint (off by default)
+$responsive-type: false;
+$desktop-h1: 2.369rem;
+$desktop-h2: 1.777rem;
+$desktop-h3: 1.333rem;
+$desktop-h4: 1rem;
+$desktop-h5: .75rem;
+$desktop-h6: .75rem;
+
+// Text sizes
+$base-mobile-font-size: 14px;
+$base-desktop-font-size: 18px;
+$large-font-size: $h3;
+$small-font-size: $h5;
+
+// Weights
+$base-font-weight: 400;
+$heading-font-weight: 700;
+
+// Line heights
+$base-line-height: $baseline*4;
+$heading-line-height: 1;
+
+
+// Colors
+// -----------------------------------------------------------------------------
+// Color by name
+// Change these colors to something other than "darker"
+$white: #fff;
+$lightest-gray: #e7eaee;
+$light-gray: #a1adbc;
+$gray: #708299;
+$dark-gray: #44505f;
+$darkest-gray: #2f3741;
+$blue: #428bca;
+$green: #acce45;
+$orange: #dd845a;
+
+// Darken
+$darken: rgba(0,0,0,.03125);
+
+// Brand colors
+$primary-brand-color: $orange;
+$secondary-brand-color: $green;
+$brand-accent-color: $orange;
+
+// Text colors
+$text-color: $dark-gray;
+$light-text-color: $light-gray;
+
+// Link colors
+$link-color: $primary-brand-color;
+$link-hover-color: darken($primary-brand-color, 10%);
+$active-link-color: darken($primary-brand-color, 25%);
+
+// Border colors
+$border-color: $light-gray;
+
+// Code colors
+$code-color: $dark-gray;
+$code-background-color: $lightest-gray;
+
+
+// Spaces
+// -----------------------------------------------------------------------------
+$space-1: $baseline*2;
+$space-2: $baseline*5;
+$space-3: $baseline*8;
+$space-4: $baseline*11;
+
+// Specific margins
+$body-text-bottom-margin: $space-2;
+$heading-text-bottom-margin: $body-text-bottom-margin;
+
+
+// Design elements
+// -----------------------------------------------------------------------------
+// Button padding
+$large-button-padding: $baseline*3 $baseline*4;
+$medium-button-padding: $baseline $baseline*3;
+$small-button-padding: 0 $baseline*2;
+
+// Form padding
+$large-ui-padding: $baseline*3 $baseline*3;
+$medium-ui-padding: $baseline $baseline;
+$small-ui-padding: 0 $baseline;
+
+// Borders
+$border-style: solid;
+$border-radius: 3px;
+$border-color:  $lightest-gray;
+
+// Animations
+$fade: .2s ease-out;
