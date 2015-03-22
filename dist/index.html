@@ -11,6 +11,10 @@
 
         <title>Sirvo Styleguide</title>
 
+        <!-- Typekit -->
+        <script src="//use.typekit.net/qqp3obe.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
         <!-- Import web fonts using the link tag instead of CSS @import: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import -->
         <link rel="stylesheet" href="">
 
@@ -28,14 +32,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
         <div class="clearfix">
 
-            <!-- Styleguide Nav -->
-            <div class="float-left one-fifth scroll-overflow full-height pt2 pb2 small white-text darkest-gray-background">
-                <p class="sg-title bold">Sirvo Styleguide</p>
+            <!-- #Nav -->
+            <div class="float-left one-fifth scroll-overflow full-height pt2 pb2 white-text darkest-gray-background">
+                <a class="sg-nav-link mb3" href="/">Sirvo Styleguide</a>
                 <ul class="no-bullets m0">
-                    <li><a class="sg-nav-link" href="#">Typography</a></li>
+                    <li><a class="sg-nav-link" href="/typography.html">Typography</a></li>
                     <li><a class="sg-nav-link" href="#">Forms</a></li>
                     <li><a class="sg-nav-link" href="#">Buttons</a></li>
                     <li><a class="sg-nav-link" href="#">Tables</a></li>
@@ -44,40 +47,20 @@
                 </ul>
             </div>
 
-            <!-- Styleguide Content -->
+            <!-- #Content -->
             <div class="float-left four-fifths scroll-overflow full-height p4">
 
-                <!-- Typography -->
-                <div class="pb2" id="typography">
-                    <h2 class="pb1 bottom-border"><a class="link" href="#typography">Typography</a></h2>
-                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-                    <div class="darken-background rounded">
-                        <div class="p1">
-                            <p>Example</p>
-                        </div>
-                        <div class="p1 darken-background">
-                            <p>Code</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Forms -->
-                <div class="pt2 pb2" id="forms">
-                    <h2><a class="link border-bottom" href="#forms">Forms</a></h2>
-                </div>
+<h1>Sirvo Styleguide</h1>
 
-                <h2>Buttons</h2>
-                <h2>Tables</h2>
-                <h2>Colors</h2>
-                <h2>Embeds</h2>
-            </div>
+            </div><!-- End of #Content -->
 
         </div><!-- End of clearfix div -->
 
         <!-- Reference latest jQuery, with a local fallback -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-        
+
         <!-- The compiled Javascript file -->
         <script src="js/production.js"></script>
 
@@ -90,7 +73,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-        
+
     </body>
 
 </html>

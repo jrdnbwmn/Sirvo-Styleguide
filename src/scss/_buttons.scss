@@ -13,16 +13,21 @@ button {
 .button:link,
 .button:visited {
     background-image: none; // Reset unusual Firefox-on-Android default style: https://github.com/necolas/normalize.css/issues/214
-    border-radius: $border-radius;
+    border-radius: $button-border-radius;
     border-style: solid;
     border-width: 1px;
     cursor: pointer;
     display: inline-block; // Allow us to better style box model properties
     font-family: $ui-font-family;
+    //font-size: $small-font-size;
+    font-weight: 700;
+    height: 2.8rem;
+    //letter-spacing: 1px;
     line-height: $base-line-height;
     margin-bottom: 0; // For input.button
     text-align: center;
     text-decoration: none;
+    //text-transform: uppercase;
     transition: background-color $fade, background $fade, color $fade, border $fade;
     vertical-align: middle; // Line different size buttons up nicely
     white-space: nowrap; // Stop buttons wrapping and looking broken
@@ -64,7 +69,7 @@ fieldset[disabled] .button {
     padding: $large-button-padding;
 }
 
-.medium-button { padding:$medium-button-padding; }
+.medium-button { padding: $medium-button-padding; }
 
 .small-button {
     font-size: $h6;
@@ -85,13 +90,13 @@ fieldset[disabled] .button {
 
 .primary-button:hover,
 .primary-button:focus {
-    background-color: darken($primary-brand-color, 10%);
-    border-color: darken($primary-brand-color, 10%);
+    background-color: darken($primary-brand-color, 7%);
+    border-color: darken($primary-brand-color, 7%);
 }
 
 .primary-button:active {
-    background-color: darken($primary-brand-color, 20%);
-    border-color: darken($primary-brand-color, 20%);
+    background-color: darken($primary-brand-color, 14%);
+    border-color: darken($primary-brand-color, 14%);
 }
 
 // Secondary button
@@ -101,18 +106,40 @@ fieldset[disabled] .button {
     background-color: transparent;
     border-color: $light-gray;
     border-width: 2px;
-    color: $text-color;
+    color: $gray;
 }
 
 .secondary-button:hover,
 .secondary-button:focus {
-    background-color: darken($lightest-gray, 10%);
-    border-color: darken($lightest-gray, 10%);
+    background-color: darken($lightest-gray, 7%);
+    border-color: darken($lightest-gray, 7%);
+    color: $white;
 }
 
 .secondary-button:active {
-    background-color: darken($lightest-gray, 20%);
-    border-color: darken($lightest-gray, 20%);
+    background-color: darken($lightest-gray, 14%);
+    border-color: darken($lightest-gray, 14%);
+    color: $white;
+}
+
+// Tertiary button
+.tertiary-button,
+.tertiary-button:link,
+.tertiary-button:visited {
+    background-color: $secondary-brand-color;
+    border-color: $secondary-brand-color;
+    color: $white;
+}
+
+.tertiary-button:hover,
+.tertiary-button:focus {
+    background-color: darken($secondary-brand-color, 7%);
+    border-color: darken($secondary-brand-color, 7%);
+}
+
+.tertiary-button:active {
+    background-color: darken($secondary-brand-color, 14%);
+    border-color: darken($secondary-brand-color, 14%);
 }
 
 // Dark background button

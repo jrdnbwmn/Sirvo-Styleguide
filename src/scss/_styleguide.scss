@@ -3,13 +3,6 @@
 $sg-padding: $baseline $baseline*4;
 
 
-// Styleguide Type
-// -----------------------------------------------------------------------------
-.sg-title {
-    padding: $sg-padding;
-}
-
-
 // Styleguide Nav
 // -----------------------------------------------------------------------------
 .sg-nav-link,
@@ -31,4 +24,23 @@ $sg-padding: $baseline $baseline*4;
     background-color: $dark-gray;
     outline: 0;
     text-decoration: none;
+}
+
+
+// Heading Anchor Links
+// -----------------------------------------------------------------------------
+.sg-heading-anchor,
+.sg-heading-anchor:visited {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.sg-heading-anchor:hover,
+.sg-heading-anchor:focus {
+    text-decoration: underline;
+}
+
+.sg-heading-anchor:active {
+    background-image: none;
+    outline: 0;
 }

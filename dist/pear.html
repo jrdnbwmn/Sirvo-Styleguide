@@ -11,6 +11,10 @@
 
         <title>Sirvo Styleguide</title>
 
+        <!-- Typekit -->
+        <script src="//use.typekit.net/qqp3obe.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
         <!-- Import web fonts using the link tag instead of CSS @import: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import -->
         <link rel="stylesheet" href="">
 
@@ -27,6 +31,24 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="clearfix">
+
+            <!-- #Nav -->
+            <div class="float-left one-fifth scroll-overflow full-height pt2 pb2 white-text darkest-gray-background">
+                <a class="sg-nav-link mb3" href="/">Sirvo Styleguide</a>
+                <ul class="no-bullets m0">
+                    <li><a class="sg-nav-link" href="/typography.html">Typography</a></li>
+                    <li><a class="sg-nav-link" href="#">Forms</a></li>
+                    <li><a class="sg-nav-link" href="#">Buttons</a></li>
+                    <li><a class="sg-nav-link" href="#">Tables</a></li>
+                    <li><a class="sg-nav-link" href="#">Colors</a></li>
+                    <li><a class="sg-nav-link" href="#">Embeds</a></li>
+                </ul>
+            </div>
+
+            <!-- #Content -->
+            <div class="float-left four-fifths scroll-overflow full-height p4">
 
         
         <div class="pt3 pb3 centered-text secondary-brand-color-background white-text">
@@ -255,10 +277,14 @@
             </div>
         </footer>
 
+            </div><!-- End of #Content -->
+
+        </div><!-- End of clearfix div -->
+
         <!-- Reference latest jQuery, with a local fallback -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-        
+
         <!-- The compiled Javascript file -->
         <script src="js/production.js"></script>
 
@@ -271,7 +297,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-        
+
     </body>
 
 </html>

@@ -16,7 +16,7 @@ $max-container-width: 45em;
 // Typography
 // -----------------------------------------------------------------------------
 // Font families
-$sans-serif: "Avenir Next", Avenir, Trebuchet, Verdana, sans-serif;
+$sans-serif: "museo-sans", Trebuchet, Verdana, sans-serif;
 $serif: Georgia, Times, serif;
 $monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 
@@ -51,8 +51,8 @@ $large-font-size: $h3;
 $small-font-size: $h5;
 
 // Weights
-$base-font-weight: 400;
-$heading-font-weight: 700;
+$base-font-weight: 300;
+$heading-font-weight: 900;
 
 // Line heights
 $base-line-height: $baseline*4;
@@ -70,7 +70,7 @@ $gray: #708299;
 $dark-gray: #44505f;
 $darkest-gray: #2f3741;
 $blue: #428bca;
-$green: #acce45;
+$green: #5690ca;
 $orange: #dd845a;
 
 // Darken
@@ -79,7 +79,7 @@ $darken: rgba(0,0,0,.03125);
 // Brand colors
 $primary-brand-color: $orange;
 $secondary-brand-color: $green;
-$brand-accent-color: $orange;
+$brand-accent-color: $blue;
 
 // Text colors
 $text-color: $dark-gray;
@@ -94,7 +94,7 @@ $active-link-color: darken($primary-brand-color, 25%);
 $border-color: $light-gray;
 
 // Code colors
-$code-color: $dark-gray;
+$code-color: $gray;
 $code-background-color: $lightest-gray;
 
 
@@ -114,7 +114,7 @@ $heading-text-bottom-margin: $body-text-bottom-margin;
 // -----------------------------------------------------------------------------
 // Button padding
 $large-button-padding: $baseline*3 $baseline*4;
-$medium-button-padding: $baseline $baseline*3;
+$medium-button-padding: $baseline*1.5 $baseline*5;
 $small-button-padding: 0 $baseline*2;
 
 // Form padding
@@ -126,6 +126,7 @@ $small-ui-padding: 0 $baseline;
 $border-style: solid;
 $border-radius: 3px;
 $border-color:  $lightest-gray;
+$button-border-radius: 27px;
 
 // Animations
-$fade: .2s ease-out;
+$fade: .1s ease-out;
