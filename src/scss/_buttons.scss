@@ -18,12 +18,12 @@ button {
     border-width: 1px;
     cursor: pointer;
     display: inline-block; // Allow us to better style box model properties
-    font-family: $ui-font-family;
+    font-family: $font-family--ui;
     //font-size: $small-font-size;
     font-weight: 700;
     height: 2.8rem;
     //letter-spacing: 1px;
-    line-height: $base-line-height;
+    line-height: $line-height--base;
     margin-bottom: 0; // For input.button
     text-align: center;
     text-decoration: none;
@@ -34,7 +34,7 @@ button {
     -webkit-appearance: none;
             appearance: none;
 
-    @media screen and (max-width: $small-breakpoint) {
+    @media screen and (max-width: $breakpoint--small) {
         display: block;
         margin-bottom: $space-1;
     }
@@ -64,102 +64,102 @@ fieldset[disabled] .button {
 
 // Button sizes
 // -----------------------------------------------------------------------------
-.large-button {
+.button--large {
     font-size: $h3;
-    padding: $large-button-padding;
+    padding: $button-padding--large;
 }
 
-.medium-button { padding: $medium-button-padding; }
+.button--medium { padding: $button-padding--medium; }
 
-.small-button {
+.button--small {
     font-size: $h6;
-    padding:$small-button-padding;
+    padding:$button-padding--small;
 }
 
 
 // Button skins
 // -----------------------------------------------------------------------------
 // Primary button
-.primary-button,
-.primary-button:link,
-.primary-button:visited {
-    background-color: $primary-brand-color;
-    border-color: $primary-brand-color;
+.button--primary,
+.button--primary:link,
+.button--primary:visited {
+    background-color: $brand-color--primary;
+    border-color: $brand-color--primary;
     color: $white;
 }
 
-.primary-button:hover,
-.primary-button:focus {
-    background-color: darken($primary-brand-color, 7%);
-    border-color: darken($primary-brand-color, 7%);
+.button--primary:hover,
+.button--primary:focus {
+    background-color: darken($brand-color--primary, 7%);
+    border-color: darken($brand-color--primary, 7%);
 }
 
-.primary-button:active {
-    background-color: darken($primary-brand-color, 14%);
-    border-color: darken($primary-brand-color, 14%);
+.button--primary:active {
+    background-color: darken($brand-color--primary, 14%);
+    border-color: darken($brand-color--primary, 14%);
 }
 
 // Secondary button
-.secondary-button,
-.secondary-button:link,
-.secondary-button:visited {
+.button--secondary,
+.button--secondary:link,
+.button--secondary:visited {
     background-color: transparent;
     border-color: $light-gray;
     border-width: 2px;
     color: $gray;
 }
 
-.secondary-button:hover,
-.secondary-button:focus {
+.button--secondary:hover,
+.button--secondary:focus {
     background-color: darken($lightest-gray, 7%);
     border-color: darken($lightest-gray, 7%);
     color: $white;
 }
 
-.secondary-button:active {
+.button--secondary:active {
     background-color: darken($lightest-gray, 14%);
     border-color: darken($lightest-gray, 14%);
     color: $white;
 }
 
 // Tertiary button
-.tertiary-button,
-.tertiary-button:link,
-.tertiary-button:visited {
-    background-color: $secondary-brand-color;
-    border-color: $secondary-brand-color;
+.button--tertiary,
+.button--tertiary:link,
+.button--tertiary:visited {
+    background-color: $brand-color--secondary;
+    border-color: $brand-color--secondary;
     color: $white;
 }
 
-.tertiary-button:hover,
-.tertiary-button:focus {
-    background-color: darken($secondary-brand-color, 7%);
-    border-color: darken($secondary-brand-color, 7%);
+.button--tertiary:hover,
+.button--tertiary:focus {
+    background-color: darken($brand-color--secondary, 7%);
+    border-color: darken($brand-color--secondary, 7%);
 }
 
-.tertiary-button:active {
-    background-color: darken($secondary-brand-color, 14%);
-    border-color: darken($secondary-brand-color, 14%);
+.button--tertiary:active {
+    background-color: darken($brand-color--secondary, 14%);
+    border-color: darken($brand-color--secondary, 14%);
 }
 
 // Dark background button
-.dark-bg-button,
-.dark-bg-button:link,
-.dark-bg-button:visited {
+.button--dark-bg,
+.button--dark-bg:link,
+.button--dark-bg:visited {
     background-color: transparent;
     border-color: $white;
     border-width: 2px;
     color: $white;
 }
 
-.dark-bg-button:hover,
-.dark-bg-button:focus {
+.button--dark-bg:hover,
+.button--dark-bg:focus {
     background-color: $white;
     border-color: $white;
     color: $text-color;
 }
 
-.dark-bg-button:active {
+.button--dark-bg:active {
     background-color: $lightest-gray;
     border-color: $lightest-gray;
     color: $text-color;
@@ -170,4 +170,4 @@ fieldset[disabled] .button {
 // -----------------------------------------------------------------------------
 // Horizontally centers a button
 // Wrap the button in a `div` with this class
-.centered-button { text-align: center; }
+.button--centered { text-align: center; }

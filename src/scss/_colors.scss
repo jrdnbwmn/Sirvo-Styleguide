@@ -6,23 +6,23 @@
 .gray-text                    { color: $gray; }
 .dark-gray-text               { color: $dark-gray; }
 .darkest-gray-text            { color: $darkest-gray; }
-.primary-brand-color-text     { color: $primary-brand-color; }
-.secondary-brand-color-text   { color: $secondary-brand-color; }
-.brand-accent-color-text      { color: $brand-accent-color; }
+.primary-brand-color-text     { color: $brand-color--primary; }
+.secondary-brand-color-text   { color: $brand-color--secondary; }
+.tertiary-brand-color-text    { color: $brand-color--tertiary; }
 
-.light-text-color             { color: $light-text-color }
+.text-color--light            { color: $text-color--light }
 
 
 // Background colors
 // -----------------------------------------------------------------------------
-.white-background                 { background-color: $white; }
-.lightest-gray-background         { background-color: $lightest-gray; }
-.light-gray-background            { background-color: $light-gray; }
-.gray-background                  { background-color: $gray; }
-.dark-gray-background             { background-color: $dark-gray; }
-.darkest-gray-background          { background-color: $darkest-gray; }
-.primary-brand-color-background   { background-color: $primary-brand-color; }
-.secondary-brand-color-background { background-color: $secondary-brand-color; }
-.brand-accent-color-background    { background-color: $brand-accent-color; }
+.white-background                  { background-color: $white; }
+.lightest-gray-background          { background-color: $lightest-gray; }
+.light-gray-background             { background-color: $light-gray; }
+.gray-background                   { background-color: $gray; }
+.dark-gray-background              { background-color: $dark-gray; }
+.darkest-gray-background           { background-color: $darkest-gray; }
+.primary-brand-color-background    { background-color: $brand-color--primary; }
+.secondary-brand-color-background  { background-color: $brand-color--secondary; }
+.tertiary-brand-color-background   { background-color: $brand-color--tertiary; }
 
-.darken-background                { background-color: $darken; }
+.darken-background                 { background-color: $darken; }

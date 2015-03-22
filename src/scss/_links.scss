@@ -16,13 +16,13 @@ a:active, a:hover { outline: 0; }
 
 .link:hover,
 .link:focus {
-    color: $link-hover-color;
+    color: $link-color--hover;
     text-decoration: underline;
 }
 
 .link:active {
     background-image: none;
-    color: $active-link-color;
+    color: $link-color--active;
     outline: 0;
     transition: color $fade;
 }

@@ -8,7 +8,7 @@ $total-number-columns: 12;
 $column-padding: $baseline*2;
 
 // Set the breakpoint at which columns will go to full width.
-$sink-breakpoint: $small-breakpoint;
+$sink-breakpoint: $breakpoint--small;
 
 
 // Classes
@@ -18,7 +18,7 @@ $sink-breakpoint: $small-breakpoint;
 .grid-row {
     font-size: 0; // Part of getting rid of the inline-block ghost space
     margin: 0 (-$column-padding);
-        
+
     @media screen and (max-width: $sink-breakpoint) {
         margin: 0 auto;
     }
@@ -35,7 +35,7 @@ $sink-breakpoint: $small-breakpoint;
 //  -webkit-box-sizing: border-box;
 //     -moz-box-sizing: border-box;
 //          box-sizing: border-box;
-    
+
     @media screen and (max-width: $sink-breakpoint) {
         display: block;
         padding-left: 0;
@@ -112,11 +112,10 @@ $sink-breakpoint: $small-breakpoint;
 
 // Utilities
 // -----------------------------------------------------------------------------
-// Centers the column horizontally in the grid and clears the row of all 
+// Centers the column horizontally in the grid and clears the row of all
 // other columns
 .centered-column {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-

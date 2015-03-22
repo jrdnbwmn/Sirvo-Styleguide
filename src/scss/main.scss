@@ -1,9 +1,8 @@
-// Variables first
+// Variables
 @import "variables";
 
-// Reset and dependencies
+// Normalize
 @import "normalize";
-@import "print";
 
 // Base
 @import "global";
@@ -19,15 +18,18 @@
 @import "code";
 @import "tables";
 
-// Skins
+// Abstractions
 @import "margins";
 @import "padding";
 @import "colors";
 @import "borders";
 @import "grid";
 
+// Styleguide
+@import "styleguide";
+
 // Utilities
 @import "utilities";
 
-// Styleguide
-@import "styleguide";
+// Print
+@import "print";

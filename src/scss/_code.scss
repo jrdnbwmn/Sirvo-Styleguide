@@ -1,7 +1,7 @@
 // Normalization
 // -----------------------------------------------------------------------------
 // Make font family consistent
-code, kbd, pre, samp { font-family: $code-font-family; }
+code, kbd, pre, samp { font-family: $font-family--code; }
 
 
 // Base code styles
@@ -17,9 +17,9 @@ code, kbd, pre, samp { font-family: $code-font-family; }
 .code-block {
     color: $code-color;
     display: block;
-    line-height: $base-line-height;
+    line-height: $line-height--base;
     margin-bottom: $body-text-bottom-margin;
     max-width: 100%;
     overflow-x: scroll;
-    padding: $large-ui-padding;
+    padding: $ui-padding--large;
 }
