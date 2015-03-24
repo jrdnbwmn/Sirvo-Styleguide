@@ -105,43 +105,57 @@ fieldset[disabled] .button {
 .button--secondary,
 .button--secondary:link,
 .button--secondary:visited {
-    background-color: transparent;
-    border-color: $light-gray;
-    border-width: 1px;
-    color: $gray;
+    background-color: $brand-color--secondary;
+    border-color: $brand-color--secondary;
+    color: $white;
 }
 
 .button--secondary:hover,
 .button--secondary:focus {
-    background-color: darken($lightest-gray, 7%);
-    border-color: darken($lightest-gray, 7%);
-    color: $white;
+    background-color: darken($brand-color--secondary, 7%);
+    border-color: darken($brand-color--secondary, 7%);
 }
 
 .button--secondary:active {
-    background-color: darken($lightest-gray, 14%);
-    border-color: darken($lightest-gray, 14%);
-    color: $white;
+    background-color: darken($brand-color--secondary, 14%);
+    border-color: darken($brand-color--secondary, 14%);
 }
 
 // Tertiary button
 .button--tertiary,
 .button--tertiary:link,
 .button--tertiary:visited {
-    background-color: $brand-color--secondary;
-    border-color: $brand-color--secondary;
+    background-color: $brand-color--tertiary;
+    border-color: $brand-color--tertiary;
     color: $white;
 }
 
 .button--tertiary:hover,
 .button--tertiary:focus {
-    background-color: darken($brand-color--secondary, 7%);
-    border-color: darken($brand-color--secondary, 7%);
+    background-color: darken($brand-color--tertiary, 7%);
+    border-color: darken($brand-color--tertiary, 7%);
 }
 
 .button--tertiary:active {
-    background-color: darken($brand-color--secondary, 14%);
-    border-color: darken($brand-color--secondary, 14%);
+    background-color: darken($brand-color--tertiary, 14%);
+    border-color: darken($brand-color--tertiary, 14%);
+}
+
+// Outline button
+.button--outline,
+.button--outline:link,
+.button--outline:visited {
+    background-color: transparent;
+    border-color: $light-gray;
+    border-width: 1px;
+    color: $gray;
+}
+
+.button--outline:hover,
+.button--outline:focus,
+.button--outline:active {
+    border-color: $gray;
+    color: $dark-gray;
 }
 
 // Dark background button

@@ -77,7 +77,7 @@ fieldset[disabled] input {
 // input[type="color"]
 .form-control {
     background-image: none; // Reset unusual Firefox-on-Android default style
-    border: 1px solid $border-color;
+    border: 1px solid $light-gray;
     border-radius: $border-radius;
     color: $text-color;
     display: block;
@@ -85,10 +85,15 @@ fieldset[disabled] input {
     font-size: 1rem;
     line-height: $line-height--base;
     max-width: 100%;
-    padding: $ui-padding--medium;
+    padding: $ui-padding--large;
+    transition: border $fade;
     width: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+}
+
+.form-control:focus {
+    border-color: $brand-color--tertiary;
 }
 
 .select {
