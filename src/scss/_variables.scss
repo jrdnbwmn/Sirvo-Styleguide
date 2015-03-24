@@ -16,7 +16,7 @@ $max-container-width: 45em;
 // Typography
 // -----------------------------------------------------------------------------
 // Font families
-$sans-serif: "museo-sans", Trebuchet, Verdana, sans-serif;
+$sans-serif: "museo-sans", Verdana, sans-serif;
 $serif: Georgia, Times, serif;
 $monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 
@@ -51,8 +51,10 @@ $font-size--large: $h3;
 $font-size--small: $h5;
 
 // Weights
-$font-weight--base: 300;
-$font-weight--heading: 900;
+$font-weight--thin: 300;
+$font-weight--thick: 700;
+$font-weight--base: $font-weight--thin;
+$font-weight--heading: $font-weight--thick;
 
 // Line heights
 $line-height--base: $baseline*4;
@@ -64,11 +66,22 @@ $line-height--heading: 1;
 // Color by name
 // Change these colors to something other than "darker"
 $white: #fff;
+
+
+$lightest-gray: #e7e9ea;
+$light-gray: #c2c7ca;
+$gray: #9ea6ab;
+$dark-gray: #7a848b;
+$darkest-gray: #42484c;
+
+/*
 $lightest-gray: #e7eaee;
 $light-gray: #a1adbc;
 $gray: #708299;
 $dark-gray: #44505f;
 $darkest-gray: #2f3741;
+*/
+
 $blue: #428bca;
 $green: #5690ca;
 $orange: #dd845a;
@@ -82,7 +95,7 @@ $brand-color--secondary: $green;
 $brand-color--tertiary: $blue;
 
 // Text colors
-$text-color: $dark-gray;
+$text-color: $darkest-gray;
 $text-color--light: $light-gray;
 
 // Link colors
@@ -114,7 +127,7 @@ $heading-text-bottom-margin: $body-text-bottom-margin;
 // -----------------------------------------------------------------------------
 // Button padding
 $button-padding--large: $baseline*3 $baseline*4;
-$button-padding--medium: $baseline*1.5 $baseline*5;
+$button-padding--medium: $baseline*1 $baseline*5;
 $button-padding--small: 0 $baseline*2;
 
 // Form padding

@@ -5,6 +5,8 @@ $sg-padding: $baseline $baseline*4;
 
 // Styleguide Nav
 // -----------------------------------------------------------------------------
+.sg-nav { width: 17% }
+
 .sg-nav-link,
 .sg-nav-link:link,
 .sg-nav-link:visited {
@@ -27,8 +29,10 @@ $sg-padding: $baseline $baseline*4;
 }
 
 
-// Heading Anchor Links
+// Content
 // -----------------------------------------------------------------------------
+.sg-content { width: 83% }
+
 .sg-heading-anchor,
 .sg-heading-anchor:visited {
     color: $text-color;

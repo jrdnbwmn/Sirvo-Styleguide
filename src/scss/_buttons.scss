@@ -19,9 +19,8 @@ button {
     cursor: pointer;
     display: inline-block; // Allow us to better style box model properties
     font-family: $font-family--ui;
-    //font-size: $small-font-size;
-    font-weight: 700;
-    height: 2.8rem;
+    //font-size: $font-size--small;
+    font-weight: $font-weight--thick;
     //letter-spacing: 1px;
     line-height: $line-height--base;
     margin-bottom: 0; // For input.button
@@ -69,7 +68,10 @@ fieldset[disabled] .button {
     padding: $button-padding--large;
 }
 
-.button--medium { padding: $button-padding--medium; }
+.button--medium {
+    height: 2.4rem;
+    padding: $button-padding--medium;
+}
 
 .button--small {
     font-size: $h6;
@@ -105,7 +107,7 @@ fieldset[disabled] .button {
 .button--secondary:visited {
     background-color: transparent;
     border-color: $light-gray;
-    border-width: 2px;
+    border-width: 1px;
     color: $gray;
 }
 
